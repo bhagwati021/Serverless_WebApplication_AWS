@@ -1,40 +1,99 @@
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 10px;
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+    color: #333;
 }
 
-h1 {
-	margin: 0;
+/* Header Styles */
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+}
+
+.counter-number {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+}
+
+.form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
 form {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-label {
-	margin-bottom: 10px;
-}
-
-input[type="text"] {
-	padding: 5px;
-	margin-bottom: 10px;
-	border-radius: 5px;
-	border: none;
-	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+input[type=\"text\"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
 }
 
 button {
-	padding: 5px 10px;
-	background-color: #333;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-#greeting {
-	margin-top: 20px;
-	font-size: 1.2rem;
+button:hover {
+    background-color: #555;
+}
+
+.greeting-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4caf50;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

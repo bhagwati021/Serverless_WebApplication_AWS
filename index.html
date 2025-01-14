@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>A Monk in Cloud</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h1>Greeting App</h1>
-        <div class="counter-number">Views</div>
-	</header>
-	<main>
-		<form>
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name">
-			<button id="submit-btn">Submit</button>
-		</form>
-		<p id="greeting"></p>
-	</main>
-	<script src="script.js"></script>
+    <header>
+        <h1>Welcome to Greeting App</h1>
+        <p>Share your name and make this place a little more personal!</p>
+        <div class="counter-number">Loading views...</div>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Say Hello!</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <button id="submit-btn">Submit</button>
+            </form>
+            <p id="greeting" class="greeting-message"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bhagwati Bashyal. @bhagwatibashyal1234@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
