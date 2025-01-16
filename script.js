@@ -6,7 +6,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     const name = document.querySelector('#name').value.trim();
     if (name) {
-        greeting.textContent = `Hello, ${name}! Welcome to A Monk in Cloud.`;
+        greeting.textContent = `Hello, ${name}! Welcome to my site.`;
         greeting.style.opacity = 1;
     } else {
         greeting.textContent = 'Please enter your name!';
@@ -17,7 +17,7 @@ form.addEventListener('submit', (event) => {
 async function updateCounter() {
     try {
         const response = await fetch(
-            'https://o73g5ptpujgtclinhzhhneplje0jogoh.lambda-url.us-east-1.on.aws/'
+            'https://mkzhwnihcrikruummchfj7seue0njdls.lambda-url.ap-south-1.on.aws/'
         );
         const data = await response.json();
         counter.textContent = `Views: ${data}`;
